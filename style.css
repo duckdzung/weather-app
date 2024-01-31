@@ -1,0 +1,123 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family        : sans-serif;
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
+    overflow           : hidden;
+    height             : 100vh;
+    background-position: center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+}
+
+body.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+        url(hot.png) no-repeat center/cover !important;
+}
+
+body.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+        url(cold.png) no-repeat center/cover !important;
+}
+
+
+.weather-app-container.hot {
+    background-image: url(hot.png) !important;
+}
+
+.weather-app-container.cold {
+    background-image: url(cold.png) !important;
+}
+
+.weather-app-container {
+    background-position: center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    border-radius      : 10px;
+    padding            : 30px;
+    min-width          : 400px;
+    max-width          : 450px;
+    height             : 550;
+}
+
+.search {
+    border          : none;
+    outline         : none;
+    width           : 100%;
+    font-size       : 19px;
+    padding         : 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color           : white;
+    border-radius   : 0 15px 0 15px;
+    box-shadow      : 0 5px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom   : 30px;
+    transition      : 0.3s;
+}
+
+.search:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius   : 15px 0 15px 0;
+    color           : black;
+}
+
+.location {
+    color      : white;
+    font-size  : 50px;
+    text-align : center;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+    margin-top   : 5px;
+    color        : white;
+    font-size    : 17px;
+    text-align   : center;
+    margin-bottom: 30px;
+}
+
+.temperature {
+    color           : white;
+    font-size       : 50px;
+    text-align      : center;
+    font-weight     : bold;
+    text-shadow     : 4px 4px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
+    width           : 70%;
+    margin          : auto;
+    padding         : 20px;
+    border-radius   : 20px;
+    box-shadow      : 2px 2px 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.short-desc {
+    margin-top : 20px;
+    color      : white;
+    font-size  : 40px;
+    text-align : center;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.more-desc {
+    display        : flex;
+    justify-content: space-between;
+    margin-top     : 30px;
+}
+
+.visibility,
+.wind,
+.cloud {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    color          : white;
+    gap            : 10px;
+}
